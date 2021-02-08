@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: darksalmon;
+    overflow-x: hidden;
+}
+.headline{
+    display: inline-block;
+    font-size: 2.5rem;
+    border-right: 2px solid transparent;
+    animation: typing 1s linear infinite;
+}
+
+@keyframes typing{
+    to{
+        border-right-color: black;
+    }
+
+}
+
+.speed-controller{
+    position: absolute;
+    bottom: 2rem;
+    background: rgba(0,0,0,0.3);
+    padding: 10px 20px;
+}
+.speed-controller label{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.speed-controller input{
+    text-align: center;
+    background: transparent;
+    border: 1px solid black;
+    padding: 4px;
+    font-size: 1rem;
+    font-weight: bold;
+    outline: none;
+}
